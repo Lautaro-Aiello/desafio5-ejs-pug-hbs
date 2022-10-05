@@ -1,0 +1,17 @@
+html 
+    head
+        title Productos recibidos 
+    body
+        h1 Productos recibidos    
+        each producto in productos
+            ul  
+                li=(producto.title)
+                li=(producto.price)
+                li 
+                    img(src=producto.thumbnail width="100px" alt=producto.title)
+
+        a(href="/")
+            button Cargar producto 
+
+
+        

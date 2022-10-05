@@ -1,0 +1,10 @@
+<h1>Productos recibidos</h1>
+{{#each productos}}
+<ul>
+    <li>{{title}}</li>
+    <li>${{price}}</li>
+    <li><img src={{thumbnail}} width="100px" alt={{title}}></li>
+</ul>
+{{/each}}
+
+<a href="/"><button>Cargar producto</button></a>
