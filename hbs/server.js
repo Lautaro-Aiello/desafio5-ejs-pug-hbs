@@ -29,7 +29,7 @@ routerProduct.get("/productos", (req, res)=>{
 
 routerProduct.post("/productos", (req, res)=>{
     const producto = req.body
-    res.json(contenedor.agregarProducto(producto))
+    contenedor.agregarProducto(producto)
     res.redirect("/")
 })
 
